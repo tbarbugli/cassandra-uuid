@@ -13,7 +13,7 @@ env:
 services:
   - cassandra
 install:
-  - pip install cassandra-driver==CASSANDRA_DRIVER
+  - pip install cassandra-driver==$CASSANDRA_DRIVER
   - pip install cqlsh
 script:
   - cqlsh -f schema.cql
